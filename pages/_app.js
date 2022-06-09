@@ -9,9 +9,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <QueryClientProvider client={queryClient}>
       <Hydrate state={pageProps.dehydratedState}>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        {/* <Layout>
+          
+        </Layout> */}
+        <Component {...pageProps} />
       </Hydrate>
     </QueryClientProvider>
   );
